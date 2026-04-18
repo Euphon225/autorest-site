@@ -6,7 +6,24 @@ const translations = {
         features: "Features",
         pricing: "Pricing",
         privacy: "Privacy",
-        coming_soon: "Coming Soon on App Store"
+        coming_soon: "Coming Soon on App Store",
+        back: "Back to Home"
+      },
+      privacy_page: {
+        title: "AutoRest – Privacy Policy",
+        last_updated: "Last updated: April 12, 2026",
+        h1: "1. Data Collection",
+        p1: "AutoRest does <strong>not</strong> collect, store, or transmit any personal data to external servers. All workout data (sets, heart rate, rest durations) stays exclusively on your device.",
+        h2: "2. HealthKit",
+        p2: "AutoRest uses Apple HealthKit to read heart rate data and save workout sessions. This data is stored locally on your device via Apple Health and is never shared with third parties.",
+        h3: "3. In-App Purchases",
+        p3: "AutoRest offers a one-time purchase (\"AutoRest Pro\") processed entirely by Apple. We do not store any payment information.",
+        h4: "4. Third-Party Services",
+        p4: "AutoRest does not use any advertising networks, analytics SDKs, or third-party tracking services.",
+        h5: "5. Children's Privacy",
+        p5: "AutoRest does not knowingly collect data from children under 13.",
+        h6: "6. Contact",
+        p6: "For any privacy questions, contact us at:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
         eyebrow: "Apple Watch + iPhone",
@@ -78,7 +95,24 @@ const translations = {
         features: "Fonctionnalités",
         pricing: "Tarifs",
         privacy: "Confidentialité",
-        coming_soon: "Bientôt sur l'App Store"
+        coming_soon: "Bientôt sur l'App Store",
+        back: "Retour à l'accueil"
+      },
+      privacy_page: {
+        title: "AutoRest – Politique de Confidentialité",
+        last_updated: "Dernière mise à jour : 12 avril 2026",
+        h1: "1. Collecte de Données",
+        p1: "AutoRest ne collecte, ne stocke et ne transmet <strong>aucune</strong> donnée personnelle vers des serveurs externes. Toutes les données d'entraînement (séries, fréquence cardiaque, durées de repos) restent exclusivement sur votre appareil.",
+        h2: "2. HealthKit",
+        p2: "AutoRest utilise Apple HealthKit pour lire les données de fréquence cardiaque et enregistrer les sessions d'entraînement. Ces données sont stockées localement sur votre appareil via Apple Health et ne sont jamais partagées avec des tiers.",
+        h3: "3. Achats Intégrés",
+        p3: "AutoRest propose un achat unique (\"AutoRest Pro\") traité entièrement par Apple. Nous ne stockons aucune information de paiement.",
+        h4: "4. Services Tiers",
+        p4: "AutoRest n'utilise aucun réseau publicitaire, SDK d'analyse ou service de suivi tiers.",
+        h5: "5. Confidentialité des Enfants",
+        p5: "AutoRest ne collecte sciemment aucune donnée provenant d'enfants de moins de 13 ans.",
+        h6: "6. Contact",
+        p6: "Pour toute question relative à la confidentialité, contactez-nous à :<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
         eyebrow: "Apple Watch + iPhone",
@@ -150,7 +184,24 @@ const translations = {
         features: "Funciones",
         pricing: "Precios",
         privacy: "Privacidad",
-        coming_soon: "Próximamente en App Store"
+        coming_soon: "Próximamente en App Store",
+        back: "Volver al inicio"
+      },
+      privacy_page: {
+        title: "AutoRest – Política de Privacidad",
+        last_updated: "Última actualización: 12 de abril de 2026",
+        h1: "1. Recopilación de Datos",
+        p1: "AutoRest <strong>no</strong> recopila, almacena ni transmite ningún dato personal a servidores externos. Todos los datos de entrenamiento (series, frecuencia cardíaca, duración del descanso) permanecen exclusivamente en tu dispositivo.",
+        h2: "2. HealthKit",
+        p2: "AutoRest utiliza Apple HealthKit para leer datos de frecuencia cardíaca y guardar las sesiones de entrenamiento. Estos datos se almacenan localmente en tu dispositivo a través de Apple Health y nunca se comparten con terceros.",
+        h3: "3. Compras en la Aplicación",
+        p3: "AutoRest ofrece una compra única (\"AutoRest Pro\") procesada íntegramente por Apple. No almacenamos ninguna información de pago.",
+        h4: "4. Servicios de Terceros",
+        p4: "AutoRest no utiliza redes publicitarias, SDKs de análisis ni servicios de seguimiento de terceros.",
+        h5: "5. Privacidad de los Menores",
+        p5: "AutoRest no recopila intencionalmente datos de niños menores de 13 años.",
+        h6: "6. Contacto",
+        p6: "Para cuestiones de privacidad, contáctenos en:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
         eyebrow: "Apple Watch + iPhone",
@@ -222,7 +273,24 @@ const translations = {
         features: "Funktionen",
         pricing: "Preise",
         privacy: "Datenschutz",
-        coming_soon: "Bald im App Store"
+        coming_soon: "Bald im App Store",
+        back: "Zurück zur Startseite"
+      },
+      privacy_page: {
+        title: "AutoRest – Datenschutzrichtlinie",
+        last_updated: "Zuletzt aktualisiert: 12. April 2026",
+        h1: "1. Datenerfassung",
+        p1: "AutoRest erfasst, speichert oder überträgt <strong>keine</strong> persönlichen Daten an externe Server. Alle Trainingsdaten (Sätze, Herzfrequenz, Pausenzeiten) bleiben ausschließlich auf Ihrem Gerät.",
+        h2: "2. HealthKit",
+        p2: "AutoRest verwendet Apple HealthKit, um Herzfrequenzdaten zu lesen und Trainingseinheiten zu speichern. Diese Daten werden lokal auf Ihrem Gerät über Apple Health gespeichert und niemals an Dritte weitergegeben.",
+        h3: "3. In-App-Käufe",
+        p3: "AutoRest bietet einen einmaligen Kauf (\"AutoRest Pro\") an, der vollständig von Apple abgewickelt wird. Wir speichern keine Zahlungsinformationen.",
+        h4: "4. Dienste von Drittanbietern",
+        p4: "AutoRest verwendet keine Werbenetzwerke, Analyse-SDKs oder Tracking-Dienste von Drittanbietern.",
+        h5: "5. Datenschutz für Kinder",
+        p5: "AutoRest sammelt wissentlich keine Daten von Kindern unter 13 Jahren.",
+        h6: "6. Kontakt",
+        p6: "Für Fragen zum Datenschutz kontaktieren Sie uns unter:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
         eyebrow: "Apple Watch + iPhone",
@@ -400,7 +468,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const fadeElements = document.querySelectorAll('.fade-up');
   fadeElements.forEach(el => observer.observe(el));
 
-  document.querySelector('.pageclip-form').addEventListener('submit', function(e) {
-    console.log('Données envoyées :', new FormData(this).get('email'));
-  });
+  const pageclipForm = document.querySelector('.pageclip-form');
+  if (pageclipForm) {
+    pageclipForm.addEventListener('submit', function(e) {
+      console.log('Données envoyées :', new FormData(this).get('email'));
+    });
+  }
 });

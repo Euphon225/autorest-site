@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRest – Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- i18next CDNs -->
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+
+    <style>
+        .privacy-page {
+            max-width: 800px;
+            margin: 120px auto 60px auto;
+            padding: 0 5%;
+        }
+        .privacy-page h1 { 
+            color: var(--primary); 
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            margin-bottom: 0.5rem;
+        }
+        .privacy-page .last-updated {
+            color: var(--on-surface-variant);
+            margin-bottom: 3rem;
+            font-size: 0.875rem;
+        }
+        .privacy-page h2 { 
+            margin-top: 40px; 
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .privacy-page p {
+            color: var(--on-surface);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .privacy-page strong {
+            color: var(--primary);
+        }
+        .privacy-page a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .privacy-page a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="Logo Autorest.png" alt="AutoRest Logo" style="width: 36px; height: 36px; border-radius: 50%;">
+                AutoRest
+            </a>
+            
+            <div class="nav-actions" style="margin-left: auto;">
+                <select id="lang-switcher" class="lang-selector">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                </select>
+                <div class="nav-links" style="margin: 0 0 0 1rem; padding: 0;">
+                    <a href="index.html" data-i18n="nav.back">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container privacy-page">
+        <h1 data-i18n="privacy_page.title">AutoRest – Privacy Policy</h1>
+        <p class="last-updated" data-i18n="privacy_page.last_updated">Last updated: April 12, 2026</p>
+
+        <h2 data-i18n="privacy_page.h1">1. Data Collection</h2>
+        <p data-i18n="privacy_page.p1">AutoRest does <strong>not</strong> collect, store, or transmit 
+        any personal data to external servers. All workout data 
+        (sets, heart rate, rest durations) stays exclusively 
+        on your device.</p>
+
+        <h2 data-i18n="privacy_page.h2">2. HealthKit</h2>
+        <p data-i18n="privacy_page.p2">AutoRest uses Apple HealthKit to read heart rate data 
+        and save workout sessions. This data is stored locally 
+        on your device via Apple Health and is never shared 
+        with third parties.</p>
+
+        <h2 data-i18n="privacy_page.h3">3. In-App Purchases</h2>
+        <p data-i18n="privacy_page.p3">AutoRest offers a one-time purchase ("AutoRest Pro") 
+        processed entirely by Apple. We do not store any 
+        payment information.</p>
+
+        <h2 data-i18n="privacy_page.h4">4. Third-Party Services</h2>
+        <p data-i18n="privacy_page.p4">AutoRest does not use any advertising networks, 
+        analytics SDKs, or third-party tracking services.</p>
+
+        <h2 data-i18n="privacy_page.h5">5. Children's Privacy</h2>
+        <p data-i18n="privacy_page.p5">AutoRest does not knowingly collect data from 
+        children under 13.</p>
+
+        <h2 data-i18n="privacy_page.h6">6. Contact</h2>
+        <p data-i18n="privacy_page.p6">For any privacy questions, contact us at:<br>
+        <strong>autorest.support@gmail.com</strong></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
