@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRest | Train hands-free. Recover smarter.</title>
+    <meta name="description"
+        content="AutoRest detects the exact end of a gym set and starts your rest timer automatically. No tapping. No interruptions. Just lift.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+    <!-- i18next CDNs -->
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="Logo Autorest.png" alt="AutoRest Logo" style="width: 36px; height: 36px; border-radius: 50%;">
+                AutoRest
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works" data-i18n="nav.how_it_works">How It Works</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+            </div>
+            <div class="nav-actions">
+                <select id="lang-switcher" class="lang-selector">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                </select>
+                <button class="btn-disabled" disabled data-i18n="nav.coming_soon">Coming Soon on App Store</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero fade-up">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="label-md eyebrow" data-i18n="hero.eyebrow">Apple Watch + iPhone</span>
+                <h1 class="display-lg" data-i18n="hero.title">Train hands-free.<br>Recover smarter.</h1>
+                <p class="body-lg" data-i18n="hero.subtitle">AutoRest detects when you finish a set and starts your rest
+                    timer automatically. No tapping. No interruptions. Just lift.</p>
+
+                <form action="https://send.pageclip.co/bMpIMq9Q3PEKrHVk0e7iNpQ9ND8bi8uK" class="pageclip-form hero-form"
+                    method="post">
+                    <input type="email" name="email" class="hero-input" placeholder="votre@email.com" required>
+                    <button type="submit" class="pageclip-form__submit hero-button">
+                        <span data-i18n="hero.notify">Prévenez-moi du lancement</span>
+                    </button>
+                </form>
+                <p class="small-text mt-4" data-i18n="hero.review">Currently in App Store review.</p>
+            </div>
+            <div class="hero-visual">
+                <img id="hero-image" src="autorest-en.png" alt="AutoRest Preview" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section fade-up">
+        <div class="container">
+            <h2 class="headline-lg" data-i18n="how_it_works.title">How it works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title" data-i18n="how_it_works.step1_title">Start your session</h3>
+                    <p class="body-lg" data-i18n="how_it_works.step1_desc">Open AutoRest on your Apple Watch and begin
+                        your workout.</p>
+                </div>
+                <div class="step-card step-offset-1">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title" data-i18n="how_it_works.step2_title">Lift</h3>
+                    <p class="body-lg" data-i18n="how_it_works.step2_desc">Perform your set. AutoRest detects when your
+                        movement stops using wrist motion analysis.</p>
+                </div>
+                <div class="step-card step-offset-2">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title" data-i18n="how_it_works.step3_title">Rest automatically</h3>
+                    <p class="body-lg" data-i18n="how_it_works.step3_desc">Your timer starts instantly. Your watch
+                        notifies you when to go again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section fade-up">
+        <div class="container">
+            <h2 class="headline-lg" data-i18n="features.title">Precision engineered</h2>
+
+            <div class="bento-grid">
+                <!-- Large Card -->
+                <div class="card card-large">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1.5rem;">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <h3 data-i18n="features.f1_title">Automatic Set Detection</h3>
+                    <p class="body-lg" data-i18n="features.f1_desc">AutoRest analyzes wrist acceleration patterns to
+                        detect the exact end of a set and trigger rest automatically. No button press needed.</p>
+                </div>
+
+                <!-- Small Cards side by side -->
+                <div class="card card-small card-darker">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1.5rem;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3 data-i18n="features.f2_title">Custom Rest Durations</h3>
+                    <p class="body-lg" data-i18n="features.f2_desc">Set specific recovery times per exercise, adapted to
+                        your training style.</p>
+                </div>
+
+                <div class="card card-small card-darker">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1.5rem;">
+                        <rect x="6" y="2" width="12" height="20" rx="3" ry="3"></rect>
+                        <path d="M6 6h12"></path>
+                        <path d="M6 18h12"></path>
+                    </svg>
+                    <h3 data-i18n="features.f3_title">Apple Watch First</h3>
+                    <p class="body-lg" data-i18n="features.f3_desc">Built natively for watchOS for speed, battery
+                        efficiency, and seamless gym use.</p>
+                </div>
+
+                <!-- Full Width Pro Card -->
+                <div class="card card-full">
+                    <div class="card-content">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="margin-bottom: 1.5rem;">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3 data-i18n="features.f4_title">AutoRest Pro</h3>
+                        <p class="body-lg" data-i18n="features.f4_desc">Unlock advanced pacing, deeper customization,
+                            and full control over your recovery. Upgrade from the app anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section fade-up">
+        <div class="container">
+            <h2 class="headline-lg" data-i18n="pricing.title">Simple, honest pricing</h2>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3 data-i18n="pricing.monthly">Monthly</h3>
+                    <div class="price" data-i18n="pricing.monthly_price">$1.99<span
+                            data-i18n="pricing.monthly_period">/month</span></div>
+                    <p class="body-lg" data-i18n="pricing.monthly_desc">Perfect to try Pro</p>
+                    <ul class="features-list">
+                        <li data-i18n="pricing.li1">Automatic set detection</li>
+                        <li data-i18n="pricing.li2">Apple Watch haptics</li>
+                        <li data-i18n="pricing.li3">Custom rest durations</li>
+                        <li data-i18n="pricing.li4">Smart pacing insights</li>
+                    </ul>
+                </div>
+
+                <div class="price-card best-value">
+                    <div class="badge" data-i18n="pricing.best_value">Best Value</div>
+                    <h3 data-i18n="pricing.yearly">Yearly</h3>
+                    <div class="price" data-i18n="pricing.yearly_price">$9.99<span
+                            data-i18n="pricing.yearly_period">/year</span></div>
+                    <p class="body-lg highlight" data-i18n="pricing.yearly_desc">Save 58% vs monthly</p>
+                    <ul class="features-list">
+                        <li data-i18n="pricing.li1">Automatic set detection</li>
+                        <li data-i18n="pricing.li2">Apple Watch haptics</li>
+                        <li data-i18n="pricing.li3">Custom rest durations</li>
+                        <li data-i18n="pricing.li4">Smart pacing insights</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="small-text mt-8 text-muted" data-i18n="pricing.note">Note: Free version available with core
+                features.</p>
+        </div>
+    </section>
+
+    <!-- FAQ & Support & Privacy -->
+    <section id="support" class="section fade-up">
+        <div class="container support-grid">
+            <div class="support-left">
+                <h2 class="headline-lg" data-i18n="support.title">Support & Contact</h2>
+                <a href="mailto:support@autorest.app" class="email-link">support@autorest.app</a>
+
+                <div id="privacy" class="privacy-block mt-16">
+                    <h3 class="headline-md" data-i18n="support.privacy_title">Privacy Policy</h3>
+                    <p class="body-lg" data-i18n="support.privacy_desc">AutoRest is built with a privacy-first mindset.
+                        Your workout data and motion signals are processed locally on your devices. We do not sell your
+                        personal data.</p>
+                    <a href="https://autorest.app/-autorest-privacy/" class="btn-secondary" target="_blank"
+                        data-i18n="support.privacy_btn">Read Full Privacy Policy</a>
+                </div>
+            </div>
+
+            <div class="support-right faq">
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq1_q">Why didn't my last set detect?</h4>
+                    <p class="body-lg" data-i18n="support.faq1_a">Make sure your Apple Watch is fitted correctly.
+                        Exercises with clear wrist movement work best.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq2_q">Does it work for bodyweight exercises?</h4>
+                    <p class="body-lg" data-i18n="support.faq2_a">Yes, as long as the movement pattern is distinct
+                        enough for the sensors to detect.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq3_q">How do I restore my Pro purchase?</h4>
+                    <p class="body-lg" data-i18n="support.faq3_a">Go to Settings in the app and tap Restore Purchases
+                        using the same Apple ID.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">AutoRest</a>
+                <p class="small-text mt-2 text-muted" data-i18n="footer.rights">© 2026 AutoRest. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#privacy" data-i18n="nav.privacy">Privacy Policy</a>
+                    <a href="#support" data-i18n="support.title">Support</a>
+                    <a href="#">App Store</a>
+                </div>
+                <p class="domain-mention">autorest.app</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
