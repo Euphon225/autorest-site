@@ -570,6 +570,22 @@ footer {
     display: none; /* Hide standard links on mobile to save space, or make burger. Kept simple per premium vibe. */
   }
   
+  .nav-btn {
+    display: none;
+  }
+
+  .logo {
+    white-space: nowrap;
+  }
+
+  .logo img {
+    flex-shrink: 0;
+  }
+
+  .lang-selector {
+    flex-shrink: 0;
+  }
+
   .footer-container {
     flex-direction: column;
     gap: 2rem;
