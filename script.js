@@ -7,6 +7,7 @@ const translations = {
         pricing: "Pricing",
         privacy: "Privacy",
         coming_soon: "Coming Soon on App Store",
+        download: "Download on the App Store",
         back: "Back to Home"
       },
       privacy_page: {
@@ -24,6 +25,7 @@ const translations = {
         p5: "For any questions:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
+        i18n_badge: "Available in 4 languages 🇫🇷 🇬🇧 🇪🇸 🇩🇪",
         eyebrow: "Apple Watch + iPhone",
         title: "Train hands-free.<br>Recover smarter.",
         subtitle: "AutoRest detects when you finish a set and starts your rest timer automatically. No tapping. No interruptions. Just lift.",
@@ -94,6 +96,7 @@ const translations = {
         pricing: "Tarifs",
         privacy: "Confidentialité",
         coming_soon: "Bientôt sur l'App Store",
+        download: "Télécharger sur l'App Store",
         back: "Retour à l'accueil"
       },
       privacy_page: {
@@ -111,6 +114,7 @@ const translations = {
         p5: "Pour toute question :<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
+        i18n_badge: "Disponible en 4 langues 🇫🇷 🇬🇧 🇪🇸 🇩🇪",
         eyebrow: "Apple Watch + iPhone",
         title: "Entraînez-vous sans toucher.<br>Récupérez intelligemment.",
         subtitle: "AutoRest détecte la fin de votre série et lance automatiquement votre minuteur de repos. Aucun bouton. Aucune interruption. Soulevez simplement.",
@@ -181,6 +185,7 @@ const translations = {
         pricing: "Precios",
         privacy: "Privacidad",
         coming_soon: "Próximamente en App Store",
+        download: "Consíguelo en el App Store",
         back: "Volver al inicio"
       },
       privacy_page: {
@@ -198,6 +203,7 @@ const translations = {
         p5: "Para cualquier pregunta:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
+        i18n_badge: "Disponible en 4 idiomas 🇫🇷 🇬🇧 🇪🇸 🇩🇪",
         eyebrow: "Apple Watch + iPhone",
         title: "Entrena sin manos.<br>Recupera de forma inteligente.",
         subtitle: "AutoRest detecta el final de cada serie e inicia tu temporizador de descanso. Sin pantallas. Sin distracciones. Solo entrena.",
@@ -268,6 +274,7 @@ const translations = {
         pricing: "Preise",
         privacy: "Datenschutz",
         coming_soon: "Bald im App Store",
+        download: "Laden im App Store",
         back: "Zurück zur Startseite"
       },
       privacy_page: {
@@ -285,6 +292,7 @@ const translations = {
         p5: "Für alle Fragen:<br><strong>autorest.support@gmail.com</strong>"
       },
       hero: {
+        i18n_badge: "Verfügbar in 4 Sprachen 🇫🇷 🇬🇧 🇪🇸 🇩🇪",
         eyebrow: "Apple Watch + iPhone",
         title: "Trainiere freihändig.<br>Erhole dich smarter.",
         subtitle: "AutoRest erkennt, wenn ein Satz endet und startet den Timer von selbst. Einfach heben.",
@@ -367,6 +375,7 @@ function updateContent() {
 
   // Hot swap logic for the hero image dynamically
   const heroImage = document.getElementById('hero-image');
+  const appStoreBadge = document.getElementById('app-store-badge');
   if (heroImage) {
     // Determine the current resolved language (en, fr, es, de)
     let lang = 'en';
@@ -379,6 +388,16 @@ function updateContent() {
 
     // Update src
     heroImage.src = `autorest-${lang}.png`;
+
+    if (appStoreBadge) {
+        const badgeUrls = {
+            'en': 'https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83',
+            'fr': 'https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83',
+            'es': 'https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/es-es?size=250x83',
+            'de': 'https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/de-de?size=250x83'
+        };
+        appStoreBadge.src = badgeUrls[lang] || badgeUrls['en'];
+    }
   }
 }
 
